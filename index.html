@@ -225,8 +225,7 @@ text-align: center;
 </h3>
 </div>
 </style>
-<div class="description-16578141835486qxbNr-element " id="chekout">
-</div class="button-1657813946622FRFjIW BISFzh5419591">
+</div class="button-1657813946622FRFjIW BISFzh5419591" id="chekout" >
 <style>
 a.button-1657813946622FRFjIW-element {
 background-color: #00dd00;
@@ -618,28 +617,13 @@ Esta página no está afiliada a Meta ni a Google. Toda la responsabilidad del c
 </footer></div>
 </div>
 </div>
-<script>
-/* Preencher abaixo com o(s) bloco(s) que deseja mostrar após 5s. */
-var blocos = ['chekout'];
+<script type="text/javascript">
+      setTimeout(() => {document.getElementById("chekout").classList.remove("button-1657813946622FRFjIW BISFzh5419591")}, 10000); // temporização da Call to Action (em milissegundos)
+    </script>
 
-/* Tempo em 5 segundos */
-var tempo_blocos_abrir = 15; 
-
-/* Váriaveis de controle NÃO ALTERAR */
-var intervalo_blocos;
-var tempo_blocos = 0; 
-intervalo_blocos = setInterval(MostrarBlocos, 1000);
-
-function MostrarBlocos() {
-    tempo_blocos++;
-    if (tempo_blocos >= tempo_blocos_abrir) {
-        for (var i = 0; i < blocos.length; i++) {
-            $('#' + blocos[i]).removeClass('esconder_mobile esconder_desktop').css({
-                'display': 'block'
-            });
-        }
-        tempo_blocos = null;
-        clearInterval(intervalo_blocos);
-    }
-}
-</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/com.js"></script>
+  </body>
+</html>
